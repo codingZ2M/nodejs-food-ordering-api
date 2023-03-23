@@ -42,28 +42,28 @@ DELETE: localhost:5001/api/foods/:foodId
 
 ===============================================================
 
-User:
-======
+Customer:
+=========
 
-POST: http://localhost:5001/api/users/register
+POST: http://localhost:5001/api/customers/register
 {
-  "username": "Raj",
-  "email": "ssraj74@gmail.com",
+  "username": "Rick",
+  "email": "xyz@abc.com",
   "password": "12345",
   "address": "11-ML, NY",
   "phone": "404 344 1111"
 }
 
-POST: http://localhost:5001/api/users/login
+POST: http://localhost:5001/api/customers/login
 {
-  "email": "ssraj74@gmail.com",
+  "email": "xyz@abc.com",
   "password": "12345"
 }
 
-Note: User will get a token when they login, that can be sent when they want to view user profile, order products, update/delete products
+Note: Customer will get a token when they login, that can be sent when they want to view customer profile, order items, update/delete items
 
-GET: http://localhost:5001/api/users/
-NOTE: User's Bearer Token needs to be sent along with request inorder to view the User info
+GET: http://localhost:5001/api/customers/
+NOTE: Customer's Bearer Token needs to be sent along with request inorder to view the Customer info
 ===============================================================
 
 
