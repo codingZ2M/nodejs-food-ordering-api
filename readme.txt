@@ -127,14 +127,14 @@ NOTE: Customer's Bearer Token needs to be sent along with request inorder to ord
 
 
 GET: http://localhost:5001/api/orders/customer/:customerId
-NOTE: User's Bearer Token needs to be sent along with request inorder to view all the orders of a specific User
+NOTE: Customer's Bearer Token needs to be sent along with request inorder to view all the orders of a specific Customer
 
 
 GET: http://localhost:5001/api/orders/:orderId
-NOTE: User's Bearer Token needs to be sent along with request inorder to view the specific order made by specific User
+NOTE: Customer's Bearer Token needs to be sent along with request inorder to view the specific order made by specific Customer
 
 PUT: http://localhost:5001/api/orders/:orderId
-NOTE: User's Bearer Token needs to be sent along with request inorder to update the specific order made by specific User
+NOTE: Customer's Bearer Token needs to be sent along with request inorder to update the specific order made by specific Customer
 
 DELETE: http://localhost:5001/api/orders/:orderId
-NOTE: User's Bearer Token needs to be sent along with request inorder to delete the specific order made by specific User
+NOTE: Customer's Bearer Token needs to be sent along with request inorder to delete the specific order made by specific Customer
