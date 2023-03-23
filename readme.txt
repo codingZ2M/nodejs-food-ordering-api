@@ -101,21 +101,32 @@ DELETE: localhost:5001/api/restaurants/:restaurantId
 
 Order:
 =======
-
 POST: http://localhost:5001/api/orders
 {
-  "user_id": "6412da89e5eec07910ebf31d",
-  "title": "",
-  "qty": 3,
-  "size": 7,
-  "color": "Black",
-  "product_id": "6412cc48e5eec07910ebf310",
-  "category_id": "641294cae5eec07910ebf304"
+  "customer_id": "641c4f20cea2a5129f5f9820",
+  "restaurant_id": "641abf98e09e75eb5215d5bf",
+  "items": [
+    {
+      "food_id": "641c4cb8cea2a5129f5f980d",
+      "name": "Greek Chesse Stuffed Pizza",
+      "quantity": 3,
+      "price": 57.00
+    },
+        {
+      "food_id": "641a8ac771a93b2eb921d5b2",
+      "name": "Greek Chesse Stuffed Sandwitch",
+      "quantity": 2,
+      "price": 37.00
+    }
+    ],
+  "status": "Pending",
+  "total": 80.00,
+  "deliveryAddress": "23BC Main Land, CA"
 }
-NOTE: User's Bearer Token needs to be sent along with request inorder to order product
+NOTE: Customer's Bearer Token needs to be sent along with request inorder to order food
 
 
-GET: http://localhost:5001/api/orders/user
+GET: http://localhost:5001/api/orders/customer/:customerId
 NOTE: User's Bearer Token needs to be sent along with request inorder to view all the orders of a specific User
 
 
