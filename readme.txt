@@ -66,6 +66,38 @@ GET: http://localhost:5001/api/customers/
 NOTE: Customer's Bearer Token needs to be sent along with request inorder to view the Customer info
 ===============================================================
 
+Restaurants:
+===========
+POST: localhost:5001/api/restaurants
+{
+  "name": "Mike Foods",
+  "desc": "Fast Foods, Sea Foods",
+  "location": "A165 Main Land NY",
+  "menu": [
+    "6416a287da6ccac47f1dc0d8",
+    "641a8ac771a93b2eb921d5b2"
+    ]
+ }
+
+GET: localhost:5001/api/restaurants
+
+GET: localhost:5001/api/restaurants/:restaurantId
+
+PUT: localhost:5001/api/restaurants/:restaurantId
+{
+  "name": "Rick's Kitchen",
+  "desc": "Fast Foods, Sea Foods",
+  "location": "C165 Main Land NY",
+  "menu": [
+    "6416a287da6ccac47f1dc0d8",
+    "641c4cb8cea2a5129f5f980d",
+    "641a8ac771a93b2eb921d5b2"
+    ]
+ }
+
+DELETE: localhost:5001/api/restaurants/:restaurantId
+===============================================================
+
 
 Order:
 =======
