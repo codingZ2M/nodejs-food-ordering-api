@@ -11,34 +11,34 @@ GET: localhost:5001/api/categories/:categoryId
 
 PUT: localhost:5001/api/categories/:id
 {
-  "name": "Women Dresses"
+  "name": "Pizza"
 }
 
 DELETE: localhost:5001/api/categories/:id
 ===============================================================
 
 
-Products:
+Food:
 =========
 
-POST: localhost:5001/api/products
+POST: http://localhost:5001/api/foods/
 {
-  "title": "Composite Toe Waterproof Shoe For Men",
-  "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-  "price": 53.00,
-  "stock": 198,
-  "category_id": "641294cae5eec07910ebf304"
+  "title": "Greek Chesse Stuffed Sandwitch",
+  "price": 17,
+  "serves": 2,
+  "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+  "category_id": "641c4ae3cea2a5129f5f9802"
 }
 
-GET: localhost:5001/api/products
+GET: http://localhost:5001/api/foods/
 
-GET: localhost:5001/api/products/category/:category_id
+GET: http://localhost:5001/api/foods/category/:category_id
 
-GET: localhost:5001/api/products/:productId
+GET: localhost:5001/api/foods/:foodId
 
-PUT: localhost:5001/api/products/:productId
+PUT: localhost:5001/api/foods/:foodId
 
-DELETE: localhost:5001/api/products/:productId
+DELETE: localhost:5001/api/foods/:foodId
 
 ===============================================================
 
